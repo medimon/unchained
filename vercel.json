@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "unchained/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "unchained/wsgi.py"
+    }
+  ]
+}
